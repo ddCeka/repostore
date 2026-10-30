@@ -22,7 +22,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.samyak.repostore"
+        applicationId = "com.repostore.fork"
         minSdk = 26
         targetSdk = 36
         versionCode = 23
