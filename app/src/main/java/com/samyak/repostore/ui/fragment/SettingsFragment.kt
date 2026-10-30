@@ -25,9 +25,7 @@ import com.samyak.repostore.data.prefs.ThemeSettingsStore
 import com.samyak.repostore.databinding.FragmentSettingsBinding
 import kotlinx.coroutines.launch
 import com.samyak.repostore.ui.activity.AboutActivity
-import com.samyak.repostore.ui.activity.AppDeveloperActivity
 import com.samyak.repostore.ui.activity.AppUpdatesActivity
-import com.samyak.repostore.ui.activity.DonateActivity
 import com.samyak.repostore.ui.activity.GitHubSignInActivity
 import com.samyak.repostore.ui.activity.LicensesActivity
 import com.samyak.repostore.ui.activity.FavoriteActivity
@@ -65,10 +63,6 @@ class SettingsFragment : Fragment() {
         setupAppUpdatesSection()
         setupDownloadSettingsSection()
         setupAboutSection()
-        setupDeveloperSection()
-        setupDonateSection()
-        setupTelegramSection()
-        setupLinkedInSection()
         setupLicensesSection()
         setupSourceCodeSection()
     }
@@ -230,30 +224,6 @@ class SettingsFragment : Fragment() {
         }
     }
 
-    private fun setupDeveloperSection() {
-        binding.developerCard.setOnClickListener {
-            startActivity(Intent(requireContext(), AppDeveloperActivity::class.java))
-        }
-    }
-
-    private fun setupDonateSection() {
-        binding.donateCard.setOnClickListener {
-            startActivity(Intent(requireContext(), DonateActivity::class.java))
-        }
-    }
-
-    private fun setupTelegramSection() {
-        binding.telegramCard.setOnClickListener {
-            requireContext().openExternalUrl(TELEGRAM_URL)
-        }
-    }
-
-    private fun setupLinkedInSection() {
-        binding.linkedinCard.setOnClickListener {
-            requireContext().openExternalUrl(getString(R.string.linkedin_url))
-        }
-    }
-
     private fun setupLicensesSection() {
         binding.licensesCard.setOnClickListener {
             startActivity(Intent(requireContext(), LicensesActivity::class.java))
@@ -273,8 +243,7 @@ class SettingsFragment : Fragment() {
 
     companion object {
         // TODO: Replace with your actual GitHub repository URL
-        private const val SOURCE_CODE_URL = "https://github.com/samyak2403/RepoStore"
-        private const val TELEGRAM_URL = "https://t.me/+q2rca77Sx9phYTE1"
+        private const val SOURCE_CODE_URL = "https://github.com/ddCeka/RepoStore"
 
         fun newInstance() = SettingsFragment()
     }

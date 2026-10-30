@@ -77,19 +77,9 @@
             android:parentActivityName=".ui.activity.SettingsActivity" />
 
         <activity
-            android:name=".ui.activity.AppDeveloperActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
-
-        <activity
             android:name=".ui.activity.CategoriesActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
-
-        <activity
-            android:name=".ui.activity.DonateActivity"
-            android:exported="false"
-            android:parentActivityName=".ui.activity.SettingsActivity" />
 
         <activity
             android:name=".ui.activity.LicensesActivity"
