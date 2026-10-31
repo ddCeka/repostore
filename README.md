@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" width="200" alt="Project logo"/>
+  <img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" width="100" alt="Project logo"/>
 </div>
 
 <h1 align="center">RepoStore</h1>
@@ -57,11 +57,6 @@ RepoStore is a native Android app that turns GitHub releases into a clean, Play 
   - Optional GitHub sign-in via OAuth device flow.
   - Increases API rate limit from 60 to 5,000 requests/hour.
   - View developer profiles and repositories.
-
-- **Support Developer**
-  - UPI payment integration with QR code.
-  - Detects installed UPI apps (GPay, PhonePe, Paytm, etc.).
-  - One-tap payment support.
 
 ---
 
