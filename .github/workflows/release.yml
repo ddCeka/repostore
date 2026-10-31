@@ -111,11 +111,17 @@ jobs:
 
       - run: ls -lh dist
 
+      - name: Delete all artifacts
+        uses: geekyeggo/delete-artifact@v6
+        with:
+          failOnError: false
+          name: apk
+
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ needs.build.outputs.build_tag }}
-          name: Release ${{ needs.build.outputs.build_tag }}
+          name: Repostore ${{ needs.build.outputs.build_tag }}
           files: dist/signed.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
